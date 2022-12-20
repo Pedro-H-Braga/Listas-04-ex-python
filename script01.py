@@ -20,19 +20,19 @@ LÓGICA 2 COM WHILE:
 - pegar o tamanho da palavra com len() e 
 - fazer while que seja verdadeiro até contador_string (que vai percorrer a string até ser menor que o tamanho da palavra)
 - condição para percorrer a string 0 -> tamanho final, e ao percorrer, se achar uma vogal contador_vogais recebe +1 
-
 '''
-# teste string
+
+# string para teste
 entrada = 'opa digai meu bom, quão á de ser'
-letra = ''
-# contador de vogais
-contador = 0
+# contador vogal 
+contador_vogais = 0
 vogais = 'aeiouáéíóúãõâêîôû'
+# contador string)
+contador_string = 0
+tamanho_string = len(entrada)
 # transformar as entradas em minusculo para não ter divergencia na contagem
 entrada = entrada.lower()
-
-#while letra in entrada:
+# while que vai varrer a string até o tamanho maxímo dela
+while 
 
 print(f"A palavra '{entrada}' tem {contador} vogais.")
-
-
