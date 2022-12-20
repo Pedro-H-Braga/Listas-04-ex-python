@@ -8,10 +8,14 @@ resolução:
 
 ANDAR PELA STRING:
 var = '0123456789'
-x = var[0:3:2]
+x = var[0:3:2] 0 a 3 pulando de dois em dois
 RESPOSTA: X=012
 
 Fazer um laço que ande do inicio ao fim da
+
+pegar o tamanho da palavra com len() e 
+fazer while que seja verdadeiro até contador (que vai percorrer a string até ser menor que o tamanho da palavra)
+
 '''
 # teste string
 entrada = 'opa digai meu bom, quão á de ser'
@@ -23,9 +27,7 @@ vogais = 'aeiouáéíóúãõâêîôû'
 entrada = entrada.lower()
 
 #while letra in entrada:
-if letra in vogais:
-        contador += 1
 
-print(f"A palavra '{entrada}' tem {contador} vogais.".format(entrada, contador))
+print(f"A palavra '{entrada}' tem {contador} vogais.")
 
 
