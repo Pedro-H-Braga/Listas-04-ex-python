@@ -26,13 +26,23 @@ LÓGICA 2 COM WHILE:
 entrada = 'opa digai meu bom, quão á de ser'
 # contador vogal 
 contador_vogais = 0
-vogais = 'aeiouáéíóúãõâêîôû'
+vogais = 'a'
 # contador string)
 contador_string = 0
+percorre_string = ''
 tamanho_string = len(entrada)
 # transformar as entradas em minusculo para não ter divergencia na contagem
 entrada = entrada.lower()
-# while que vai varrer a string até o tamanho maxímo dela
-while 
 
-print(f"A palavra '{entrada}' tem {contador} vogais.")
+# while que vai varrer a string até o tamanho maxímo dela
+while contador_string < tamanho_string:
+    
+    percorre_string = entrada[contador_string:tamanho_string]
+    if vogais in percorre_string:
+        contador_vogais += 1
+        contador_string += 1
+    else:
+        contador_string += 1
+
+print(f"Tem {contador_vogais} vogais na palavra: {entrada}")
+#print(f"A palavra '{entrada}' tem {contador} vogais.")
