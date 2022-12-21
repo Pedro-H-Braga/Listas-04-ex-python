@@ -27,8 +27,10 @@ entrada = 'opa digai meu bom, quão á de ser'
 # tem 14 vogais
 # contador vogal 
 contador_vogais = 0
-vogais = 'a'
-# contador string)
+vogais = 'aáãâeéêiíîoóõôuúû'
+percorre_vogais = ''
+tamanho_vogais = len(vogais)
+# contador string
 contador_string = 0
 percorre_string = ''
 tamanho_string = len(entrada)
@@ -39,12 +41,14 @@ entrada = entrada.lower()
 while contador_string < tamanho_string:
     # em entrada[contador_string::tamanho_string], os '::' faz ele percorrer cada elemento da string de um a um
     percorre_string = entrada[contador_string::tamanho_string]
-    if vogais in percorre_string:
-
+    # fazer laço||condição para percorrer todas as vogais ao fazer a verificação de vogais dentro da string
+    # ou seja verificar a string com a depois com e...
+    percorre_vogais = vogais[contador_vogais::tamanho_vogais]
+    if percorre_vogais in percorre_string:
+            
         contador_vogais += 1
         contador_string += 1
-    else:
+    else: 
         contador_string += 1
 
 print(f"Tem {contador_vogais} vogais na palavra: {entrada}")
-#print(f"A palavra '{entrada}' tem {contador} vogais.")
