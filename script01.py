@@ -24,6 +24,7 @@ LÓGICA 2 COM WHILE:
 
 # string para teste
 entrada = 'opa digai meu bom, quão á de ser'
+# tem 14 vogais
 # contador vogal 
 contador_vogais = 0
 vogais = 'a'
@@ -36,9 +37,10 @@ entrada = entrada.lower()
 
 # while que vai varrer a string até o tamanho maxímo dela
 while contador_string < tamanho_string:
-    
-    percorre_string = entrada[contador_string:tamanho_string]
+    # em entrada[contador_string::tamanho_string], os '::' faz ele percorrer cada elemento da string de um a um
+    percorre_string = entrada[contador_string::tamanho_string]
     if vogais in percorre_string:
+
         contador_vogais += 1
         contador_string += 1
     else:
