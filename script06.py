@@ -11,8 +11,11 @@ fazer laço que exibe posição por posição até chegar na posição final
 '''
 entrada = 'natal'
 contador = 0
+guarda_palavra_anterior = ''
 tamanho_entrada = len(entrada) 
+entrada = entrada[::-1]
+print(entrada)
 while contador < tamanho_entrada:
-    contador += 1
-    percorre_entrada = entrada[contador::tamanho_entrada]
+    percorre_entrada = entrada[contador:tamanho_entrada]
     print(percorre_entrada)
+    contador += 1
