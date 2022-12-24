@@ -14,8 +14,9 @@ contador = 0
 guarda_palavra_anterior = ''
 tamanho_entrada = len(entrada) 
 entrada = entrada[::-1]
-print(entrada)
-while contador < tamanho_entrada:
+
+contador = tamanho_entrada
+while contador >= 0:
     percorre_entrada = entrada[contador:tamanho_entrada]
-    print(percorre_entrada)
-    contador += 1
+    print(percorre_entrada[::-1])
+    contador -= 1
