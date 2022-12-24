@@ -34,22 +34,39 @@ percorre_string = ''
 tamanho_string = len(entrada)                   # pega o tamanho da string           
                
 entrada = entrada.lower()                       # transformar as entradas em minusculo para não ter divergencia na contagem
-
-
+pos = 0
+while entrada[contador_string::tamanho_string]:
+    pos += 1
+    while vogais[contador_vogais::tamanho_vogais]:
+        pos += 1
+        if percorre_vogais in percorre_string:
+            contador_vogais += 1
+        elif percorre_vogais not in percorre_string:
+            contador_string += 1
+        if percorre_string < tamanho_string:
+            break
+        elif percorre_vogais < tamanho_vogais:
+            break
+'''
 while contador_string < tamanho_string:         # while que vai varrer a string até o tamanho maxímo dela
-    # em entrada[contador_string::tamanho_string], os '::' faz ele percorrer cada elemento da string de um a um
-    percorre_string = entrada[contador_string::tamanho_string]
-    # fazer laço||condição para percorrer todas as vogais ao fazer a verificação de vogais dentro da string
-    # ou seja verificar a string com a depois com e...
-    # ta pegando a primeira letra da string e satisfazendo o laço, tem que fazer até chegar em tamanho_vogal(ultima letra)
-    percorre_vogais = vogais[contador_vogais::tamanho_vogais]
-    # while contador_vogais < tamanho_vogais:
-    if percorre_vogais in percorre_string:        
+    
+        # em entrada[contador_string::tamanho_string], os '::' faz ele percorrer cada elemento da string de um a um
+    
+        # fazer laço||condição para percorrer todas as vogais ao fazer a verificação de vogais dentro da string
+        # ou seja verificar a string com a depois com e...
+        # ta pegando a primeira letra da string e satisfazendo o laço, tem que fazer até chegar em tamanho_vogal(ultima letra)
+    #while contador_vogais < tamanho_vogais:
+    
+    while percorre_vogais in percorre_string:        
+        percorre_string = entrada[contador_string::tamanho_string]
+        percorre_vogais = vogais[contador_vogais::tamanho_vogais]
         contador_vogais += 1
         contador_string += 1
-        #numero_vogais =
-    elif percorre_vogais not in percorre_string: # se a vogal não estiver na string, movimente +1 no contador da string das vogais para ver se tem a próxima vogal na string
-        contador_vogais += 1
-    else: contador_string += 1 # 
+            #numero_vogais =
+    if percorre_vogais not in percorre_string: # se a vogal não estiver na string, movimente +1 no contador da string das vogais para ver se tem a próxima vogal na string
+        contador_string += 1
+    elif percorre_string > tamanho_string:
+        break
 
 print(f"Tem {contador_vogais} vogais na palavra: {entrada}")
+'''
