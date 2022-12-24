@@ -9,7 +9,7 @@ NATAL
 
 fazer laço que exibe posição por posição até chegar na posição final
 '''
-entrada = 'natal'
+entrada = input('informe uma palavra: ')
 contador = 0
 guarda_palavra_anterior = ''
 tamanho_entrada = len(entrada) 
