@@ -13,6 +13,7 @@ entrada_invertida = x[::-1]
 '''
 
 entrada = str(input('informe uma palavra: '))
+entrada = entrada.lower()
 entrada_invertida = entrada[::-1]
 
 if entrada == entrada_invertida:
