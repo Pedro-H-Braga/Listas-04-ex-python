@@ -13,9 +13,6 @@ RESPOSTA: X=012
 
 Fazer um laço que ande do inicio ao fim da
 
-
-
-
 LÓGICA 2 COM WHILE:
 - pegar o tamanho da palavra com len() e 
 - fazer while que seja verdadeiro até contador_string (que vai percorrer a string até ser menor que o tamanho da palavra)
