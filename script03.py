@@ -5,7 +5,11 @@ substituindo a palavra antiga pela palavra nova.
 '''
 #duas entrada 
 entrada_frase = input("informe uma frase: ")
-entrada_antiga = input("informe a palavra antiga: ")
-entrada_nova = input("informe a palavra nova: ")
-
+print(entrada_frase)
+entrada_antiga = input("trocar: ")
+entrada_nova = input("por: ")
 # achar a palavra_antiga na frase e dar um replace, exibir a palavra antiga e a nova 
+frase_antiga = entrada_frase
+entrada_frase = entrada_frase.replace(entrada_antiga, entrada_nova)
+
+print(f"A entrada antiga era:'{frase_antiga}', a nova é:'{entrada_frase}'")
