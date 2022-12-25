@@ -14,10 +14,12 @@ while contador >= 0:
 '''
 variavel         = '1234567890'
 tamanho_variavel = len(variavel)
-contador = tamanho_variavel
-variavel = variavel[::-1]
-
-while contador >= 0:
-    percorre_variavel = variavel[contador:tamanho_variavel]
-    print(percorre_variavel[::-1])
-    contador -= 1
+contador = 1
+contador_invertido = tamanho_variavel
+while contador_invertido >= 0:
+        print(variavel[0:contador_invertido])
+        contador_invertido -= 1
+        
+        if contador_invertido == 0:
+            print(percorre_variavel[::-1])
+            contador_invertido += 1
