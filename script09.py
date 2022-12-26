@@ -40,8 +40,8 @@ while True:
 
     # se quantidade de acertos igual a palavra chave, saia do programa e exiba voce ganhou
     if acertos == tamanho_palavra:
-        print(f'****PARABENS****, voce descobriu a palavra chave: {palavra_chave}')
+        print(f'****PARABENS****, voce descobriu a palavra chave: {palavra_chave.upper()}')
         break
     elif erros > 5:
-        print(f'****QUE PENA VOCE PERDEU****, a palavra chave era: {palavra_chave}')
+        print(f'****QUE PENA VOCE PERDEU****, a palavra chave era: {palavra_chave.upper()}')
         break
