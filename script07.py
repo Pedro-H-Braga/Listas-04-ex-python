@@ -11,6 +11,12 @@ while contador >= 0:
     print(percorre_entrada[::-1])
     contador -= 1
 
+exibir a verredura da string 
+do começo pro final até chegar no tamanho_variavel, quando chegar no final
+exiba do final ao começo dela, quando chegar no começo, comece a exibir a string 
+ou seja:
+enquanto contador < tamanho_variavel and contador invertido > tamanho_inicial
+
 '''
 
 variavel           = '1234567890'
@@ -18,7 +24,7 @@ tamanho_variavel   = len(variavel)
 contador           = 0
 contador_invertido = tamanho_variavel
 tamanho_inicial    = 0
-#while contador < tamanho_variavel and contador_invertido > tamanho_inicial:
+
 while True:  
     if contador < tamanho_variavel: 
         print(variavel[:contador])
@@ -27,9 +33,4 @@ while True:
         print(variavel[:contador_invertido])
         contador_invertido -= 1
     else: break
-# exibir a verredura da string 
-# do começo pro final até chegar no tamanho_variavel, quando chegar no final
-# exiba do final ao começo dela, quando chegar no começo, comece a exibir a string 
-# ou seja:
-## enquanto contador < tamanho_variavel and contador invertido > tamanho_inicial
 
